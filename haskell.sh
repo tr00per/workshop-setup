@@ -1,4 +1,4 @@
-#!/usr/bin/bash -ueE
+#!/bin/bash -ueE
 
 sudo add-apt-repository -qq ppa:hvr/ghc
 sudo apt-get update -qq
