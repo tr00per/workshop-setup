@@ -20,5 +20,5 @@ wget -O atom.deb https://atom.io/download/deb
 sudo dpkg -i atom.deb
 rm atom.deb
 apm update
-apm install autocomplete-hasell haskell-ghc-mod ide-haskell language-haskell
+apm install autocomplete-haskell haskell-ghc-mod ide-haskell language-haskell
 apm install atom-material-syntax atom-material-ui linter-xmllint xml-formatter minimap
