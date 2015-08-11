@@ -1,6 +1,6 @@
 #!/bin/bash -ueE
 
-sudo add-apt-repository -qq ppa:hvr/ghc
+sudo add-apt-repository -y ppa:hvr/ghc
 sudo apt-get update -qq
 sudo apt-get install -qq ghc-7.10.2 cabal-install-1.22 git
 
