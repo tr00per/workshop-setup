@@ -7,12 +7,12 @@ sudo apt-get install -qq ghc-7.10.2 cabal-install-1.22 git gvfs-bin
 sudo ln -s /opt/ghc/7.10.2/bin/* /usr/local/bin/
 sudo ln -s /opt/cabal/1.22/bin/* /usr/local/bin/
 
-cabal update
-cabal install happy hlint stylish-haskell
+if [[ $PATH != */usr/local/bin/* ]]; then
+    export PATH="/usr/local/bin/:$PATH"
+fi
 
-git clone https://github.com/kazu-yamamoto/ghc-mod.git
-cd ghc-mod
-cabal install
+cabal update
+cabal install happy hlint stylish-haskell ghc-mod
 
 sudo ln -s ~/.cabal/bin/* /usr/local/bin/
 
@@ -21,4 +21,4 @@ sudo dpkg -i atom.deb
 rm atom.deb
 apm update
 apm install autocomplete-haskell haskell-ghc-mod ide-haskell language-haskell
-apm install atom-material-syntax atom-material-ui linter-xmllint xml-formatter minimap
+apm install atom-material-syntax atom-material-ui minimap
