@@ -2,9 +2,9 @@
 
 sudo add-apt-repository -y ppa:hvr/ghc
 sudo apt-get update -qq
-sudo apt-get install -qq ghc-7.10.2 cabal-install-1.22 git gvfs-bin
+sudo apt-get install -qq ghc-7.10.3 cabal-install-1.22 git gvfs-bin
 
-sudo ln -s /opt/ghc/7.10.2/bin/* /usr/local/bin/
+sudo ln -s /opt/ghc/7.10.3/bin/* /usr/local/bin/
 sudo ln -s /opt/cabal/1.22/bin/* /usr/local/bin/
 
 if [[ $PATH != */usr/local/bin/* ]]; then
